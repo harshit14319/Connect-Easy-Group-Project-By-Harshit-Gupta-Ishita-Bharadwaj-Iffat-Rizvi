@@ -21,7 +21,7 @@ router
 
 router
   .route("/product/new")
-  .post(isAuthenticatedUser, authorizeRoles("admin"), createProduct);
+  .post(isAuthenticatedUser, createProduct);
 
 router
   .route("/product/:id")
